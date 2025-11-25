@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "username": "eloiza",
+        "password": "$2y$10$oNGEUUbYKTLl8NqguuaPcOOVFO\/pozPsaDS6Vgn5gfzABBNTIpr8u"
+    },
+    {
+        "id": 2,
+        "username": "Yasuo",
+        "password": "$2y$10$JAlnIPYG4\/QaGUvzaOzUvOM8HrdfOu7eL6zFOPOJw12xK7LeA\/9Am"
+    },
+    {
+        "id": 3,
+        "username": "yasuo123",
+        "password": "$2y$10$3bzH.oyGncSYajNR4c.JRev7m2sl38KBRpuZuTQXrgOAkyHbLOkNC"
+    },
+    {
+        "id": 4,
+        "username": "Yasuo123",
+        "password": "$2y$10$Huol6r\/WwowGtgEMdyEb8eTYlxQw181fhMRmYEk.6mZAeKGdDYkLC"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 2,
+        "user_id": 2,
+        "name": "Ako si",
+        "age": 53,
+        "diagnosis": "dsodksdoks",
+        "contact_info": "5-305-3535",
+        "location": "Unknown"
+    },
+    
+    {
+        "id": 3,
+        "user_id": 4,
+        "name": "asaskas",
+        "age": 25,
+        "diagnosis": "sdlssjdjl",
+        "contact_info": "04095489554",
+        "location": "Unknown"
+    },
+
+    {
+        "id": 3,
+        "user_id": 1,
+        "name": "meow",
+        "age": 100000,
+        "diagnosis": "wjrowjrowjr",
+        "contact_info": "02992982587"
+    }
+]
