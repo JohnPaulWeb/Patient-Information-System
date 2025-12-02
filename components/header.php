@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Helper function to check login
+
 function is_logged_in() {
   return isset($_SESSION['user_id']);
 }
@@ -13,7 +13,7 @@ function is_logged_in() {
 <html>
 <head>
   <title>Patient Information System</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 <header>

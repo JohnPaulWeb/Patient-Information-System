@@ -1,4 +1,7 @@
 body {
+  background-image: url(../image/udd.png);
+  
+  
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   margin: 0;
@@ -87,9 +90,6 @@ th {
   color: white;
 }
 
-/* ===========================
-   Center Login & Register Forms
-   =========================== */
 
 .auth-wrapper {
   display: flex;

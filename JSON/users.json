@@ -18,5 +18,23 @@
         "id": 4,
         "username": "Yasuo123",
         "password": "$2y$10$Huol6r\/WwowGtgEMdyEb8eTYlxQw181fhMRmYEk.6mZAeKGdDYkLC"
+    },
+    {
+        "id": 5,
+        "username": "ling",
+        "password": "$2y$10$WD7sLSUXhlunrneldsBf7.K.ROqPRuI\/YnV96U.SeSCYZ9DvUDJ8.",
+        "email": "ling@gmail.com"
+    },
+    {
+        "id": 6,
+        "username": "roger",
+        "password": "$2y$10$k\/gTXz3Zdr644E9PmgAJAu5UwAji2dSVfkOniw.ezhwbNBroMg3\/.",
+        "email": "roger@gmail.com"
+    },
+    {
+        "id": 7,
+        "username": "yasuo",
+        "password": "$2y$10$j57BST9AuoRuFu5AXfcAROem2IpRqZV7nJmnbPCdODrYYQBxbTGpa",
+        "email": "yasuo@gmail.com"
     }
 ]

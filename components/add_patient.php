@@ -40,15 +40,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php foreach ($errors as $e) echo "<div style='color:red;'>$e</div>"; ?>
 
   <form method="post">
-    <label>Name</label>
+    <label>Name:</label>
     <input name="name" required>
-    <label>Age</label>
+    <label>Age:</label>
     <input name="age" type="number" min="0" required>
-    <label>Diagnosis</label>
+    <label>Diagnosis:</label>
     <textarea name="diagnosis"></textarea>
-    <label>Contact Info</label>
+    <label>Contact Info:</label>
     <input name="contact_info">
-    <button type="submit">Save</button>
+    <button type="submit">Save:</button>
   </form>
 </div>
   

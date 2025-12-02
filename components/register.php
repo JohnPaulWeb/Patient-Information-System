@@ -1,35 +1,39 @@
 <?php
 require 'data.php';
-// session_start();
+if (session_status() === PHP_SESSION_NONE) session_start();
 
 $errors = [];
-$users = read_json('users.json');
+$users = read_json('../JSON/users.json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username'] ?? '');
     $password = $_POST['password'] ?? '';
-
-    
     $email = trim($_POST['email'] ?? '');
-    // nag add ako ng Email
 
-    if ($username === '' || $password === '') {
+    if ($username === '' || $password === '' || $email === '') {
         $errors[] = 'Please fill all fields.';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Invalid email address.';
     } elseif (array_filter($users, fn($u) => $u['username'] === $username)) {
-        $errors[] = 'Username already exists.';
+        $errors[] = 'Username has been exists.';
+    } elseif (array_filter($users, fn($u) => isset($u['email']) && $u['email'] === $email)) {
+        $errors[] = 'Email has been registered.';
     }
 
     if (empty($errors)) {
         $newUser = [
             'id' => count($users) + 1,
             'username' => $username,
-            'password' => password_hash($password, PASSWORD_DEFAULT)
+            'password' => password_hash($password, PASSWORD_DEFAULT),
+            'email' => $email
         ];
+        
         $users[] = $newUser;
-        write_json('users.json', $users);
+        write_json('../JSON/users.json', $users);
 
         $_SESSION['user_id'] = $newUser['id'];
         $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
 
         header('Location: patients.php');
         exit;
@@ -54,28 +58,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="auth-box">
     <h2>Register</h2>
 
-    
     <?php foreach ($errors as $e): ?>
       <div style="color:red; text-align:center; margin-bottom:10px;">
         <?= htmlspecialchars($e) ?>
       </div>
     <?php endforeach; ?>
-    
+
     <form method="post">
       <label>Username</label>
-      <input type="text" name="username" required>
+      <input type="text" placeholder="Enter your Username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
 
       <label>Password</label>
-      <input type="password" name="password" required>
+      <input type="password" placeholder="Enter your Password" name="password" required>
 
       <label for="email">Email</label>
-      <input type="email" name="email" required>
+      <input type="email" placeholder="Enter your Email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
 
       <button type="submit">Register</button>
+    </form>
 
+    <p>Already have an account? <a href="login.php">Login</a></p>
 
+  </div>
+</div>
 
-      <?php include 'footer.php'; ?>
-  
+<?php include 'footer.php'; ?>
+
 </body>
 </html>
