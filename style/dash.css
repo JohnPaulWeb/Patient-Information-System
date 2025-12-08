@@ -1,0 +1,222 @@
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dashboard h2 {
+  color: #333;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard h2::after {
+  content: '👋';
+  font-size: 40px;
+}
+
+.dashboard > p {
+  color: #666;
+  font-size: 18px;
+  margin: 0 0 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card b {
+  display: block;
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card br + text {
+  color: #666;
+  font-size: 16px;
+}
+
+.search {
+  margin-bottom: 40px;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px 20px 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>') no-repeat 15px center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.list {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.list p {
+  color: #666;
+  font-size: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0;
+}
+
+.list p:last-child {
+  border-bottom: none;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn:not(.primary):not(.logout) {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn:not(.primary):not(.logout)::before {
+  content: '📋';
+}
+
+.btn:not(.primary):not(.logout):hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+.btn.logout {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.logout:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Keep existing auth styles */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.auth-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.auth-box h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background-color: #0056b3;
+}
+
+.auth-box p {
+  text-align: center;
+  margin-top: 10px;
+}

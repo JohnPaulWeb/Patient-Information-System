@@ -38,8 +38,7 @@
     </style>
 </head>
 <body>
-
-                
+    
             <h1>Patient Information System</h1>
         <h1>Thank you for Visiting Us</h1>
         <a href="../components/register.php"><button type="button">Register</button></a>

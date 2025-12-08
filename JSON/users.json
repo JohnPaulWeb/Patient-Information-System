@@ -36,5 +36,11 @@
         "username": "yasuo",
         "password": "$2y$10$j57BST9AuoRuFu5AXfcAROem2IpRqZV7nJmnbPCdODrYYQBxbTGpa",
         "email": "yasuo@gmail.com"
+    },
+    {
+        "id": 8,
+        "username": "akoto",
+        "password": "$2y$10$d.34LSgG\/wCSHtPqEOZWGOxNqA7J6fdvnM2m4hc.Q3bvcuU6XFl7y",
+        "email": "akot@gmail.com"
     }
 ]

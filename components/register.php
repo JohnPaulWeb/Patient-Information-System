@@ -65,14 +65,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endforeach; ?>
 
     <form method="post">
+
+    <label for="email">Email</label>
+      <input type="email" placeholder="Enter your Email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+
       <label>Username</label>
       <input type="text" placeholder="Enter your Username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
 
       <label>Password</label>
       <input type="password" placeholder="Enter your Password" name="password" required>
 
-      <label for="email">Email</label>
-      <input type="email" placeholder="Enter your Email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+      
 
       <button type="submit">Register</button>
     </form>
