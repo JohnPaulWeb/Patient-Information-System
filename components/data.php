@@ -16,7 +16,7 @@ function write_json($file, $data)
 }
 
 
-function add_patient($user_id, $name, $age, $diagnosis, $contact_info)
+function add_patient($user_id, $name, $age, $diagnosis, $contact_info, $location)
 {
     $patients = read_json('../JSON/patients.json');
     $new_patient = [
@@ -25,7 +25,8 @@ function add_patient($user_id, $name, $age, $diagnosis, $contact_info)
         'name' => $name,
         'age' => $age,
         'diagnosis' => $diagnosis,
-        'contact_info' => $contact_info
+        'contact_info' => $contact_info,
+        'location' => $location
     ];
     $patients[] = $new_patient;
     write_json('../JSON/patients.json', $patients);
@@ -47,7 +48,7 @@ function get_patient_by_id($id)
     return null;
 }
 
-function update_patient($id, $user_id, $name, $age, $diagnosis, $contact_info)
+function update_patient($id, $user_id, $name, $age, $diagnosis, $contact_info, $location)
 {
     $patients = read_json('../JSON/patients.json');
     foreach ($patients as &$p) {
@@ -56,6 +57,7 @@ function update_patient($id, $user_id, $name, $age, $diagnosis, $contact_info)
             $p['age'] = $age;
             $p['diagnosis'] = $diagnosis;
             $p['contact_info'] = $contact_info;
+            $p['location'] = $location;
         } 
     }
     write_json('../JSON/patients.json', $patients);

@@ -13,11 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $age = (int)($_POST['age'] ?? 0);
   $diagnosis = trim($_POST['diagnosis'] ?? '');
   $contact = trim($_POST['contact_info'] ?? '');
+  $location = trim($_POST['location'] ?? '');
 
   if ($name === '' || $age <= 0) $errors[] = 'Name and valid age are required.';
 
   if (empty($errors)) {
-    add_patient($_SESSION['user_id'], $name, $age, $diagnosis, $contact);
+    add_patient($_SESSION['user_id'], $name, $age, $diagnosis, $contact, $location);
     header('Location: patients.php');
     exit;
   }
@@ -48,7 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <textarea name="diagnosis"></textarea>
     <label>Contact Info:</label>
     <input name="contact_info">
-    <button type="submit">Save:</button>
+    <label>Location:</label>
+    <input name="location">
+    <button type="submit">Update:</button>
   </form>
 </div>
   

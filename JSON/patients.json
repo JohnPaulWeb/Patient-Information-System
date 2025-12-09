@@ -44,9 +44,10 @@
     {
         "id": 6,
         "user_id": 7,
-        "name": "Yasui",
-        "age": 912819,
-        "diagnosis": "kokeowkoke",
-        "contact_info": "093983953859395893598"
+        "name": "Juan",
+        "age": 25,
+        "diagnosis": "Leg Injured",
+        "contact_info": "0987654321",
+        "location": "Dagupan City"
     }
 ]

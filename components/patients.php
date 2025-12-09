@@ -30,7 +30,9 @@ $patients = get_patients_by_user($_SESSION['user_id']);
       <th>Age</th>
       <th>Diagnosis</th>
       <th>Contact</th>
+       <th>Location</th>
       <th>Action</th>
+     
     </tr>
     <?php foreach ($patients as $row): ?>
       <tr>
@@ -38,6 +40,7 @@ $patients = get_patients_by_user($_SESSION['user_id']);
         <td><?= htmlspecialchars($row['age']) ?></td>
         <td><?= htmlspecialchars($row['diagnosis']) ?></td>
         <td><?= htmlspecialchars($row['contact_info']) ?></td>
+        <td><?= htmlspecialchars($row['location'] ?? 'N/A') ?></td>
         <td>
           <a href="edit_patient.php?id=<?= $row['id'] ?>">Edit</a> |
           <a href="delete_patient.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this patient?')">Delete</a>
