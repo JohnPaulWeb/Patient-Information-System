@@ -44,9 +44,9 @@
     {
         "id": 6,
         "user_id": 7,
-        "name": "Juan",
-        "age": 25,
-        "diagnosis": "Leg Injured",
+        "name": "ako to",
+        "age": 123,
+        "diagnosis": "",
         "contact_info": "0987654321",
         "location": "Dagupan City"
     }

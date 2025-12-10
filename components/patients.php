@@ -50,7 +50,7 @@ $patients = get_patients_by_user($_SESSION['user_id']);
   </table>
 </div>
 
-<?php include 'footer.php'; ?>
+
   
 </body>
 </html>

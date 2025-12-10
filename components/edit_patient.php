@@ -44,16 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label>Age</label>
     <input name="age" type="number" min="0" value="<?= htmlspecialchars($patient['age']) ?>" required>
     <label>Diagnosis</label>
-    <textarea name="diagnosis"><?= htmlspecialchars($patient['diagnosis']) ?></textarea>
+    <textarea name="diagnosis" required><?= htmlspecialchars($patient['diagnosis']) ?></textarea>
     <label>Contact Info</label>
-    <input name="contact_info" value="<?= htmlspecialchars($patient['contact_info']) ?>">
+    <input name="contact_info" required value="<?= htmlspecialchars($patient['contact_info']) ?>">
     <label>Location</label>
     <input name="location" value="<?= htmlspecialchars($patient['location'] ?? '') ?>" required>
     <button type="submit">Update</button>
   </form>
 </div>
 
-<?php include 'footer.php'; ?>
   
 </body>
 </html>

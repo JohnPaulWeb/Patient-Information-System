@@ -285,7 +285,7 @@
     </main>
 
     <footer>
-        Created with ❤ by Patient Information System.
+        Created with by Patient Information System.
     </footer>
 </body>
 </html>

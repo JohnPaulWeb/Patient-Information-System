@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Invalid email address.';
     } elseif (array_filter($users, fn($u) => $u['username'] === $username)) {
         $errors[] = 'Username has been exists.';
-    } elseif (array_filter($users, fn($u) => isset($u['email']) && $u['email'] === $email)) {
+    } elseif (array_filter($users, fn($u) => isset($u['email']) && $u['email'] === $email)) { 
         $errors[] = 'Email has been registered.';
     }
 
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 </div>
 
-<?php include 'footer.php'; ?>
+
 
 </body>
 </html>
