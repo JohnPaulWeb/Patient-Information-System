@@ -66,6 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form method="post">
 
+    
     <label for="email">Email</label>
       <input type="email" placeholder="Enter your Email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
 
@@ -76,7 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <input type="password" placeholder="Enter your Password" name="password" required>
 
       
-
       <button type="submit">Register</button>
     </form>
 

@@ -42,5 +42,29 @@
         "username": "akoto",
         "password": "$2y$10$d.34LSgG\/wCSHtPqEOZWGOxNqA7J6fdvnM2m4hc.Q3bvcuU6XFl7y",
         "email": "akot@gmail.com"
+    },
+    {
+        "id": 9,
+        "username": "erika",
+        "password": "$2y$10$rLfvhPPxVYIAsObUvsSb8.5b6JyeHPxGEAZzR7qEFhmUdgq1RHwVe",
+        "email": "qwer@gmail.com"
+    },
+    {
+        "id": 10,
+        "username": "zed",
+        "password": "$2y$10$g8cbxpq7SQsHGK7.q8WbceAv83KfVEwEULABmmPPu.LXBV99qdk5u",
+        "email": "zed@gmail.com"
+    },
+    {
+        "id": 11,
+        "username": "asa",
+        "password": "$2y$10$Kv2iy89TQ\/r6Q3gOUazBte8IziXaraa2Fzs2upOi7uc2hv1ypQdae",
+        "email": "image@gmail.com"
+    },
+    {
+        "id": 12,
+        "username": "beyah",
+        "password": "$2y$10$Qt2Re5IRVJwz\/aWhf3GLMeZgUjiJR.fIa\/cF3TkKpSn2j9pYRQo9C",
+        "email": "bea@gmail.com"
     }
 ]

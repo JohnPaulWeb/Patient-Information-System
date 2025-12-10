@@ -46,8 +46,26 @@
         "user_id": 7,
         "name": "ako to",
         "age": 123,
-        "diagnosis": "",
+        "diagnosis": "Leg Injured",
         "contact_info": "0987654321",
         "location": "Dagupan City"
+    },
+    {
+        "id": 7,
+        "user_id": 10,
+        "name": "Zed",
+        "age": 25,
+        "diagnosis": "Brain Damage",
+        "contact_info": "095131212",
+        "location": "Mangaldan"
+    },
+    {
+        "id": 8,
+        "user_id": 12,
+        "name": "BEA CAMILLE MAGANDA",
+        "age": 20,
+        "diagnosis": "MAY SALTIK TALAGA",
+        "contact_info": "09123456789",
+        "location": "LINGAYEN"
     }
 ]

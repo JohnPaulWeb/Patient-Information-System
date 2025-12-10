@@ -26,35 +26,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Patient Information System</title>
   <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
 
-<div class="container">
-  <h2>Add Patient</h2>
+  <div class="container">
+    <h2>Add Patient</h2>
 
-  <?php foreach ($errors as $e) echo "<div style='color:red;'>$e</div>"; ?>
+    <?php foreach ($errors as $e) echo "<div style='color:red;'>$e</div>"; ?>
 
-  <form method="post">
-    <label>Name:</label>
-    <input name="name" required>
-    <label>Age:</label>
-    <input name="age" type="number" min="0" required>
-    <label>Diagnosis:</label>
-    <textarea name="diagnosis"></textarea>
-    <label>Contact Info:</label>
-    <input name="contact_info">
-    <label>Location:</label>
-    <input name="location">
-    <button type="submit">Update:</button>
-  </form>
-</div>
-  
+    <form method="post">
+      <label>Name:</label>
+      <input name="name" required>
+      <label>Age:</label>
+      <input name="age" type="number" min="0" required>
+      <label>Diagnosis:</label>
+      <textarea name="diagnosis"></textarea>
+      <label>Contact Info:</label>
+      <input name="contact_info">
+      <label>Location:</label>
+      <input name="location">
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
 </body>
-</html>
 
+</html>

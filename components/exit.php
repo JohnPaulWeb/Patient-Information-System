@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,16 +117,18 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="overlay"></div>
         <div class="content">
             <h1>Patient Information System</h1>
             <div class="button-group">
-                <button class="register-btn"><a href="register.php">Register</a></button>
-                <button class="login-btn"><a href="login.php">Login</a></button>
+                <a href="register.php"><button class="register-btn">Register</button></a>
+                <a href="login.php"><button class="login-btn">Login</button></a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
